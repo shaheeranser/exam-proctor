@@ -55,7 +55,7 @@ echo "Moodle Domain: $MOODLE_DOMAIN"
 
 # 3. Setup Project Repository
 echo "[3/6] Setting up project repository..."
-PROJECT_DIR="$HOME/final_year_project"
+PROJECT_DIR="$HOME/exam-proctor"
 
 # If the script is being run from inside an existing checkout, we use it.
 if [ -f "docker-compose.yml" ] && [ -f "package.json" ]; then
@@ -63,7 +63,7 @@ if [ -f "docker-compose.yml" ] && [ -f "package.json" ]; then
     echo "Using current directory as project root: $PROJECT_DIR"
 elif [ ! -d "$PROJECT_DIR" ]; then
     echo "Error: Please clone the repository first or run this script from inside the project."
-    echo "Example: git clone <repo> final_year_project && cd final_year_project && bash scripts/deploy-ec2.sh"
+    echo "Example: git clone <repo> exam-proctor && cd exam-proctor && bash scripts/deploy-ec2.sh"
     exit 1
 fi
 
