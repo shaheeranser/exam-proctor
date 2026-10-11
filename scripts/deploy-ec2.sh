@@ -63,7 +63,7 @@ if [ -f "docker-compose.yml" ] && [ -f "package.json" ]; then
     echo "Using current directory as project root: $PROJECT_DIR"
 elif [ ! -d "$PROJECT_DIR" ]; then
     echo "Error: Please clone the repository first or run this script from inside the project."
-    echo "Example: git clone <repo> exam-proctor && cd exam-proctor && bash scripts/deploy-ec2.sh"
+    echo "Example: git clone https://github.com/shaheeranser/exam-proctor exam-proctor && cd exam-proctor && bash scripts/deploy-ec2.sh"
     exit 1
 fi
 

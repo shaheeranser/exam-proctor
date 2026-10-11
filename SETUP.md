@@ -18,7 +18,7 @@ You will need the tunnel because Moodle LTI 1.3 launches require a public HTTPS 
 Clone the repository and create the runtime env file that the app stack actually reads:
 
 ```bash
-git clone <repo-url> exam-proctor
+git clone https://github.com/shaheeranser/exam-proctor exam-proctor
 cd exam-proctor
 cp .env.example server/.env
 ```
@@ -251,7 +251,7 @@ To deploy the entire stack (both Moodle and the App) to an EC2 instance for demo
 1. **Launch an EC2 Instance:** Ubuntu 24.04 (or 22.04) is recommended. Ensure the Security Group allows inbound traffic on ports `80`, `443`, and `22`.
 2. **Clone the repository:**
    ```bash
-   git clone <repo-url> exam-proctor
+   git clone https://github.com/shaheeranser/exam-proctor exam-proctor
    cd exam-proctor
    ```
 3. **Run the deployment script:**
